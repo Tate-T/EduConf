@@ -1,1 +1,12 @@
-@import "./base/common"
+@import "./base/reset";
+@import "./base/common";
+@import "./components/header";
+@import "./components/hero";
+@import "./components/speakers";
+@import "./components/shedule";
+@import "./components/gallery";
+@import "./components/attendes";
+@import "./components/secure";
+@import "./components/footer";
+@import "./components/modal";
+@import "./components/menu";
