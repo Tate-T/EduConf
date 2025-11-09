@@ -226,4 +226,62 @@ button {
 .shedule__button:active {
   background-color: #707cd6;
 }
+
+.attendees__container {
+  margin-top: 92px;
+  margin-bottom: 92px;
+}
+
+.attendees__title {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  color: var(--color-scheme-1-text);
+  margin-bottom: 24px;
+}
+
+.attendees__subtitle {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--color-scheme-1-text);
+  margin-bottom: 40px;
+}
+
+.attendees__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+}
+
+.attendees__text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--color-scheme-1-text);
+  margin-bottom: 88px;
+  width: 416px;
+  height: 180px;
+}
+
+.attendees__team__title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--color-scheme-1-text);
+}
+
+.attendees__team__text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--color-scheme-1-text);
+}
 /*# sourceMappingURL=style.css.map */
