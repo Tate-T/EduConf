@@ -1,22 +1,25 @@
 .header {
-      margin-top: 20px;
-  margin-bottom: 25px
+  margin-top: 20px;
+  margin-bottom: 25px;
 }
 
 .header-container {
-  display: flex;
-
+display: flex;
 }
 
 .header-logo {
   width: 158px;
   height: 37px;
-  
 }
 .header-nav {
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 24px;
+  display: none;
+
+  @media screen and (min-width: 1280px) {
+      display: flex;
+  }
 }
 
 .header-list {
@@ -39,7 +42,18 @@
   width: 192px;
   height: 40px;
   background: #3444c5;
-  margin-left:auto;
+  margin-left: auto;
+    display: none;
+
+  @media screen and (min-width: 1280px) {
+      display: flex;
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
 }
 
 .header-button-text {
@@ -48,6 +62,23 @@
   font-size: 16px;
   line-height: 150%;
   color: white;
+
+
 }
 
+.header-menu-button {
+  margin-left: auto;
 
+    @media screen and (min-width: 1280px) {
+    display: none;
+  }
+  
+}
+
+.svg-menu {
+     fill: #000;
+   
+  width: 24px;
+height: 24px;
+ 
+}
