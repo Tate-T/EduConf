@@ -258,6 +258,12 @@ button {
   gap: 32px;
 }
 
+.attendees-person {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+}
+
 .attendees__text {
   font-family: var(--font-family);
   font-weight: 400;

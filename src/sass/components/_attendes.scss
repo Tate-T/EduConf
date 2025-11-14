@@ -25,6 +25,17 @@
 .attendees__list {
   display: flex;
   gap: 32px;
+  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+  }
+}
+
+.attendees-person {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+  margin-bottom: 16px;
 }
 
 .attendees__text {
