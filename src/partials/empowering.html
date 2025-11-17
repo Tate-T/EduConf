@@ -1,24 +1,49 @@
 <section class="empowering">
-  <div class="contatiner empowering__container">
-    <div class="empowering__box">
-      <svg class="empowering__svg">
-        <use href="#"></use>
+  <div class="container empowering-container">
+    <div class="empowering-box">
+      <svg class="empowering-svg">
+        <use href="../img/symbol-defs.svg#icon-verify"></use>
       </svg>
-      <h3 class="empowering__title">
+      <h2 class="empowering-title">
         Empowering educators and students through innovative educational trends
         and insights.
-      </h3>
-      <p class="empowering__text">
+      </h2>
+      <p class="empowering-text">
         The Educational Conference 2025 aims to foster collaboration and
         knowledge sharing among educators, students, and researchers. Attendees
         will gain valuable insights into modern teaching methodologies and
         educational technologies that can enhance their practices.
       </p>
     </div>
-    <img
-      src="#"
-      alt="empowering photo"
-      class="empowering__photo"
-    />
+    <div class="empowering-block">
+      <picture>
+        <source
+          srcset="
+            ./img/empowering/desktop/empowering-empowering@desktop-1x.webp 1x,
+            ./img/empowering/desktop/empowering-empowering@desktop-2x.webp 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./img/empowering/tablet/empowering-empowering@tablet-1x.webp 1x,
+            ./img/empowering/tablet/empowering-empowering@tablet-2x.webp 2x
+          "
+          media="(min-width: 736px)"
+        />
+        <source
+          srcset="
+            ./img/empowering/mobile/empowering-empowering@mobile-1x.webp 1x,
+            ./img/empowering/mobile/empowering-empowering@mobile-2x.webp 2x
+          "
+          media="(max-width: 736px)"
+        />
+        <img
+          src="./img/empowering/desktop/empowering-empowering@desktop-1x.webp"
+          alt="empowering photo"
+          class="empowering-photo"
+        />
+      </picture>
+    </div>
   </div>
 </section>
