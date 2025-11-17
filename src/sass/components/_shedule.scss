@@ -1,4 +1,6 @@
 .shedule {
+    padding-top: 132px;
+    padding-bottom: 92px;
 
     &__title {
         font-family: "Teachers", sans-serif;
@@ -29,17 +31,27 @@
         border-top: 2px solid #1c1c22;
         padding: 32px 0;
         display: flex;
+        justify-content: space-between;
+
+        @media screen and (min-width: 480px) {}
+
+        @media screen and (min-width: 768px) {}
+
+        @media screen and (min-width: 1280px) {}
     }
 
     &__box {
         display: flex;
         gap: 16px;
-        margin-left: 32px;
     }
 
     &__inf {
         display: flex;
-        gap: 16px;
+        width: 336px;
+        justify-content: space-between;
+        margin-right: 30px;
+
+
     }
 
     &__time {
@@ -48,6 +60,7 @@
         font-size: 20px;
         line-height: 150%;
         color: #1c1c22;
+        margin-right: 16px;
     }
 
     &__idea {
@@ -116,6 +129,9 @@
         font-size: 16px;
         line-height: 150%;
         color: #fff;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
 
         &:hover {
             background-color: #fff;

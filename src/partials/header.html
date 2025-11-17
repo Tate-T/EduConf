@@ -3,7 +3,7 @@
     <img class="header-logo" src="./img/header-logo.webp" alt="logo" />
     <nav class="header-nav">
       <ul class="header-list">
-        <li class="header-item">
+        <li class="header-item ">
           <a class="header-link" href="">Home</a>
         </li>
         <li class="header-item">
@@ -13,7 +13,7 @@
           <a class="header-link" href="">Speakers</a>
         </li>
         <li class="header-item">
-          <a class="header-link" href="">Schedule</a>
+          <a class="header-link " href="">Schedule</a>
         </li>
         <li class="header-item">
           <a class="header-link" href="">Gallery</a>
@@ -26,5 +26,46 @@
     <button class="header-button">
       <p class="header-button-text">Register Now</p>
     </button>
-  </div>
+
+    <button class="header-menu-button" data-menu-open>
+      <svg class="svg-menu"><use href="./img/symbol-defs.svg#icon-menu"></use></svg>
+    </button>
+
+    <div class="menu is-hidden" data-menu>
+      <div class="menu-links">
+         <img class="header-logo" src="./img/header-logo.webp" alt="logo" />
+      <button  class="menu-button" data-menu-close> <svg class="menu-button-close">
+        <use href="./img/symbol-defs.svg#icon-x"></use>
+      </svg></button>
+      </div>
+     
+     
+
+      <ul class="menu-list">
+        <li class="menu-item">
+          <p class="menu-text">Home</p>
+        </li>
+         <li class="menu-item">
+          <p class="menu-text">About Us</p>
+        </li>
+         <li class="menu-item">
+          <p class="menu-text">Speakers</p>
+        </li>
+         <li class="menu-item">
+          <p class="menu-text">Schedule</p>
+        </li>
+         <li class="menu-item">
+          <p class="menu-text">Gallery</p>
+        </li>
+           <li class="menu-item">
+          <p class="menu-text">Testimonials</p>
+        </li>
+        <li class="menu-item">
+       <button class="menu-reg">
+        <p class="menu-button-text">Register Now</p>
+       </button>
+        </li>
+      </ul>
+    </div>
+  </div> 
 </header>
