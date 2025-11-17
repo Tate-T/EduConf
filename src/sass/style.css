@@ -1,20 +1,38 @@
-ul {
-  list-style: none;
+* {
   margin: 0;
   padding: 0;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+p,
+h1,
+h2,
+h3 {
   margin: 0;
 }
 
-a {
-  text-decoration: none;
+img {
+  width: 100%;
+  height: auto;
+  line-height: 0;
+  display: block;
 }
 
 button {
   border: none;
   cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
 }
 
 .container {
@@ -22,21 +40,18 @@ button {
   margin-left: auto;
   margin-right: auto;
 }
-
 @media screen and (min-width: 480px) {
   .container {
     width: 351px;
     padding: 0 8px;
   }
 }
-
 @media screen and (min-width: 768px) {
   .container {
     padding: 0 12px;
     width: 728px;
   }
 }
-
 @media screen and (min-width: 1280px) {
   .container {
     padding: 0 16px;
@@ -50,8 +65,6 @@ button {
 }
 
 .header-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -64,11 +77,15 @@ button {
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 24px;
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .header-nav {
+    display: flex;
+  }
 }
 
 .header-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 35px;
 }
@@ -89,6 +106,15 @@ button {
   height: 40px;
   background: #3444c5;
   margin-left: auto;
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .header-button {
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .header-button-text {
@@ -99,6 +125,91 @@ button {
   color: white;
 }
 
+.header-menu-button {
+  margin-left: auto;
+}
+@media screen and (min-width: 1280px) {
+  .header-menu-button {
+    display: none;
+  }
+}
+
+.svg-menu {
+  fill: #000;
+  width: 24px;
+  height: 24px;
+}
+
+.speakers {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.speakers__title {
+  font-family: "Teachers", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #03030a;
+  margin-bottom: 40px;
+}
+.speakers__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.speakers__item {
+  width: 335px;
+}
+.speakers__photo {
+  display: flex;
+  align-content: flex-start;
+}
+.speakers__subtitle {
+  font-family: "Teachers", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  color: #03030a;
+  margin-top: 16px;
+}
+.speakers__info {
+  font-family: "Teachers", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #03030a;
+  margin-bottom: 16px;
+}
+.speakers__text {
+  font-family: "Teachers", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #03030a;
+}
+
+@media screen and (min-width: 768px) {
+  .speakers {
+    padding-top: 104px;
+  }
+  .speakers__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .speakers {
+    padding-top: 92px;
+    padding-bottom: 92px;
+  }
+  .speakers__item {
+    width: 304px;
+  }
+}
 .shedule__title {
   font-family: "Teachers", sans-serif;
   font-weight: 700;
@@ -109,7 +220,6 @@ button {
   color: #1c1c22;
   margin-bottom: 24px;
 }
-
 .shedule__subtitle {
   display: block;
   font-family: "Inter", sans-serif;
@@ -123,30 +233,20 @@ button {
   color: #1c1c22;
   width: 519px;
 }
-
 .shedule__item {
   border-top: 2px solid #1c1c22;
   padding: 32px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .shedule__box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 16px;
   margin-left: 32px;
 }
-
 .shedule__inf {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 16px;
 }
-
 .shedule__time {
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -154,7 +254,6 @@ button {
   line-height: 150%;
   color: #1c1c22;
 }
-
 .shedule__idea {
   font-family: "Teachers", sans-serif;
   font-weight: 700;
@@ -163,7 +262,6 @@ button {
   letter-spacing: -0.01em;
   color: #1c1c22;
 }
-
 .shedule__in-person {
   font-family: "Inter", sans-serif;
   font-weight: 600;
@@ -175,7 +273,6 @@ button {
   padding: 4px 10px;
   width: 91px;
 }
-
 .shedule__online {
   font-family: "Inter", sans-serif;
   font-weight: 600;
@@ -187,7 +284,6 @@ button {
   padding: 4px 10px;
   width: 64px;
 }
-
 .shedule__member {
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -195,7 +291,6 @@ button {
   line-height: 150%;
   color: #1c1c22;
 }
-
 .shedule__building {
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -203,7 +298,6 @@ button {
   line-height: 150%;
   color: #1c1c22;
 }
-
 .shedule__button {
   border: 1px solid #3444c5;
   border-radius: 6px;
@@ -217,14 +311,64 @@ button {
   line-height: 150%;
   color: #fff;
 }
-
 .shedule__button:hover {
   background-color: #fff;
   color: #1c1c22;
 }
-
 .shedule__button:active {
   background-color: #707cd6;
+}
+
+.gallery-title {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: black;
+}
+
+.gallery-all {
+  display: flex;
+}
+
+.gallery-small {
+  display: flex;
+  align-items: center;
+  margin-left: 32px;
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.gallery-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--color-scheme-1-text);
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+
+.gallery-photo1 {
+  width: 640px;
+  height: 640px;
+}
+
+.gallery-photo {
+  width: 304px;
+  height: 304px;
+}
+
+.gallery-box-text {
+  text-align: center;
+  margin-top: 95px;
 }
 
 .attendees__container {
@@ -252,8 +396,6 @@ button {
 }
 
 .attendees__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 32px;
 }
@@ -284,4 +426,83 @@ button {
   line-height: 150%;
   color: var(--color-scheme-1-text);
 }
-/*# sourceMappingURL=style.css.map */
+
+.footer {
+  background-color: #03030A;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-title-box {
+  display: flex;
+  padding-bottom: auto;
+  padding-top: auto;
+  height: 51px;
+  margin-bottom: 36px;
+}
+
+.footer-title-svg {
+  fill: #fff;
+  height: 45px;
+  width: 45px;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.footer-title {
+  color: #fff;
+  font-weight: 600;
+  font-size: 45px;
+  font-family: "Inter";
+}
+
+.footer-page-nav-box {
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.footer-page-nav-list {
+  display: flex;
+  gap: 32px;
+}
+@media screen and (min-width: 480px) {
+  .footer-page-nav-list {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-page-nav-list {
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .footer-page-nav-list {
+    flex-direction: row;
+  }
+}
+
+.footer-nav-item-text {
+  color: #fff;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer-licensy-text-box {
+  border-top: #fff 2px solid;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 53px;
+  width: 100%;
+}
+
+.footer-licensy-text {
+  color: #fff;
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+}/*# sourceMappingURL=style.css.map */
