@@ -1,3 +1,8 @@
+.gallery {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
 .gallery-title {
   font-family: var(--second-family);
   font-weight: 700;
@@ -9,11 +14,7 @@
 
 }
 .gallery-all {
-    @media screen and (max-width: 720px) {
-      flex-direction: column;
-  align-items: center;
-  gap: 32px;
-  }
+ 
 
 
   @media screen and (min-width: 720px) {
@@ -29,8 +30,7 @@ display: flex;
 .gallery-small {
 
 margin-top: 16px;
-   display: flex;
-  justify-content: center;
+
 
   @media screen and (min-width: 720px) {
         margin-left: 24px;
@@ -49,7 +49,7 @@ margin-top: 16px;
 .gallery-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 8px;
 
 
   @media screen and (min-width: 720px) {
@@ -83,8 +83,11 @@ gap: 16px;
 
 
 .gallery-photo1 {
-width: 335px;
+
+@media screen and (max-width: 719px) {
+  max-width: 335px;
 height: 335px;
+}
 
 
 
@@ -100,9 +103,11 @@ height: 340px;
 
 }
 .gallery-photo {
-    width: 158px;
-height: 158px;
 
+@media screen and (max-width: 719px) {
+      max-width: 158px;
+height: 158px;
+}
 
 
 @media screen and (min-width: 1280px) {
@@ -115,5 +120,5 @@ height: 304px;
 
 .gallery-box-text {
 text-align: center;
-margin-top: 95px;
+
 }
