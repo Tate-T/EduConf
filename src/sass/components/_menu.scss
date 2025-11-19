@@ -52,7 +52,7 @@ color: black;
   }
   .menu-links {
     display: flex;
-    margin-left: auto;
+  margin-bottom: 10px;
     margin-left: 20px;
 @media screen and (min-width: 720px) {
   margin-left: 0;
@@ -75,4 +75,9 @@ margin-left: 20px;
  display: flex;
  justify-content: space-around;
  }
+  }
+  .header-logos {
+      width: 158px;
+  height: 37px;
+  
   }
