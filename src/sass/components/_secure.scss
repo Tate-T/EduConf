@@ -1,25 +1,69 @@
 .secure {
-  padding-top: 92px;
-  padding-bottom: 92px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+
+  @media screen and (min-width: 480px) {
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 92px;
+    padding-bottom: 92px;
+  }
 
   &__container {
     display: flex;
-    gap: 32px;
+
+    gap: 24px;
+    flex-direction: column;
+
+    @media screen and (min-width: 480px) {
+    }
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      gap: 32px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      gap: 32px;
+    }
   }
 
   &__box {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    @media screen and (min-width: 480px) {
+    }
+
+    @media screen and (min-width: 768px) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    @media screen and (min-width: 1280px) {
+    }
   }
 
   &__tittle {
     font-family: var(--second-family);
     font-weight: 700;
-    font-size: 48px;
+
+    font-size: 36px;
     line-height: 120%;
     letter-spacing: -0.01em;
     color: var(--color-scheme-1-text);
     margin-bottom: 24px;
+
+    @media screen and (min-width: 480px) {
+    }
+
+    @media screen and (min-width: 768px) {
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 48px;
+    }
   }
 
   &__text {
@@ -29,12 +73,30 @@
     line-height: 150%;
     color: var(--color-scheme-1-text);
     margin-bottom: 32px;
+
+    @media screen and (min-width: 480px) {
+    }
+
+    @media screen and (min-width: 768px) {
+    }
+
+    @media screen and (min-width: 1280px) {
+    }
   }
 
   &__form {
     display: flex;
     flex-direction: column;
     gap: 24px;
+
+    @media screen and (min-width: 480px) {
+    }
+
+    @media screen and (min-width: 768px) {
+    }
+
+    @media screen and (min-width: 1280px) {
+    }
   }
 
   &__label {
@@ -46,7 +108,15 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
-    
+
+    @media screen and (min-width: 480px) {
+    }
+
+    @media screen and (min-width: 768px) {
+    }
+
+    @media screen and (min-width: 1280px) {
+    }
   }
 
   &__input {
@@ -58,10 +128,37 @@
     border: 2px solid #03030a;
     border-radius: 6px;
     padding: 8px 12px;
-    width: 640px;
+    width: 335px;
     height: 48px;
     background-color: rgba(255, 255, 255, 0);
-    
+
+    @media screen and (min-width: 480px) {
+    }
+
+    @media screen and (min-width: 768px) {
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 640px;
+    }
+
+    &:hover {
+      border: 2px solid #3444c5;
+      border-radius: 6px;
+      padding: 8px 12px;
+
+      height: 48px;
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: var(--color-scheme-1-text);
+    }
+
+    &:focus {
+      border: 2px solid #3444c5;
+      color: var(--color-scheme-1-text);
+    }
   }
 
   &__button {
@@ -69,19 +166,70 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
-    color: var(--color-white);
+
+    color: #fff;
     border: 1px solid var(--color-governor-bay);
     border-radius: 6px;
     padding: 10px 24px;
-    width: 192px;
-    height: 44px;
+
+    width: 335px;
+    height: 48px;
     background-color: #3444c5;
     margin-right: auto;
+
+    @media screen and (min-width: 480px) {
+    }
+
+    @media screen and (min-width: 768px) {
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 192px;
+      height: 44px;
+    }
+
+    &:hover {
+      border: 1px solid #3444c5;
+      border-radius: 6px;
+      padding: 10px 24px;
+      width: 335px;
+      height: 48px;
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      color: #03030a;
+      background-color: white;
+
+      @media screen and (min-width: 480px) {
+      }
+
+      @media screen and (min-width: 768px) {
+      }
+
+      @media screen and (min-width: 1280px) {
+        width: 192px;
+        height: 44px;
+      }
+    }
   }
 
   &__img {
     display: block;
-    width: 640px;
-    height: 547px;
+    width: 335px;
+    height: 259px;
+
+    @media screen and (min-width: 480px) {
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 340px;
+      height: 547px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 640px;
+      height: 547px;
+    }
   }
 }
