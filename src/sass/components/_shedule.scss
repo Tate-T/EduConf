@@ -227,6 +227,9 @@
         width: 192px;
         height: 44px;
         background: #3444c5;
+        margin-top: 40px;
+        max-width: 335px;
+        width: 100%;
 
         font-family: "Inter", sans-serif;
         font-weight: 500;
@@ -239,6 +242,16 @@
         transition-property: background-color, color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        @media screen and (min-width: 480px) {}
+
+        @media screen and (min-width: 768px) {
+            width: 192px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            margin-top: 92px;
+        }
 
         &:hover {
             background-color: #fff;
