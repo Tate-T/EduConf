@@ -15,11 +15,12 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
         gap: 32px;
      
   }
   &__item {
-   width: 335px;
+   max-width: 335px;
   }
   &__photo {
     display: flex;
