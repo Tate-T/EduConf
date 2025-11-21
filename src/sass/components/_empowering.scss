@@ -1,10 +1,10 @@
 .empowering {
-  padding-top: 150px;
+  margin-top: 150px;
   @media screen and (min-width: 768px) {
-    padding-top: 150px;
+    margin-top: 150px;
   }
   @media screen and (min-width: 1280px) {
-    padding-top: 150px;
+    margin-top: 150px;
   }
 }
 .empowering-container {
@@ -65,8 +65,8 @@
   }
 }
 .empowering-photo {
-  width: 335px;
-  height: 357px;
+  width: 100%;
+  height: auto;
   padding-top: 24px;
 
   @media screen and (min-width: 768px) {
@@ -81,25 +81,25 @@
 }
 .empowering-box {
   @media screen and (min-width: 768px) {
-    margin-right: 24px;
+    padding-right: 24px;
   }
   @media screen and (min-width: 1280px) {
     padding-top: 100px;
-    margin-right: 32px;
+    padding-right: 32px;
   }
 }
 .empowering-svg {
   width: 42px;
   height: 42px;
-  margin-bottom: 24px;
+  padding-bottom: 24px;
   @media screen and (min-width: 768px) {
     width: 44px;
     height: 42px;
-    margin-bottom: 27px;
+    padding-bottom: 27px;
   }
   @media screen and (min-width: 1280px) {
     width: 48px;
     height: 48px;
-    margin-bottom: 0px;
+    padding-bottom: 0px;
   }
 }
