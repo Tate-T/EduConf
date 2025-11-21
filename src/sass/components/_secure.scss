@@ -132,7 +132,8 @@
     height: 48px;
     background-color: rgba(255, 255, 255, 0);
 
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 480px) {
+      width: 100%;
     }
 
     @media screen and (min-width: 768px) {
@@ -177,7 +178,8 @@
     background-color: #3444c5;
     margin-right: auto;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 480px) {
+      width: 100%;
     }
 
     @media screen and (min-width: 768px) {
@@ -219,7 +221,8 @@
     width: 335px;
     height: 259px;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 480px) {
+      width: 100%;
     }
 
     @media screen and (min-width: 768px) {
