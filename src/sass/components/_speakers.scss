@@ -14,12 +14,14 @@
   &__list {
     display: flex;
     flex-direction: column;
+    align-items: center;
     flex-wrap: wrap;
         gap: 32px;
      
   }
   &__item {
-   width: 335px;
+
+   max-width: 335px;
   }
   &__photo {
     display: flex;
