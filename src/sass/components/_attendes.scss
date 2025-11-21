@@ -1,11 +1,10 @@
 .attendees {
-padding-top: 64px;
-padding-bottom: 64px;
-@media screen and (min-width: 1200px) {
-  padding-top: 92px;
-padding-bottom: 93px;
-}
-
+  padding-top: 64px;
+  padding-bottom: 64px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 92px;
+    padding-bottom: 93px;
+  }
 }
 
 .attendees__title {
@@ -51,6 +50,7 @@ padding-bottom: 93px;
   height: 56px;
   border-radius: 100%;
   margin-bottom: 16px;
+  margin-top: 16px;
 }
 
 .attendees__text {
@@ -59,7 +59,7 @@ padding-bottom: 93px;
   font-size: 20px;
   line-height: 150%;
   color: var(--color-scheme-1-text);
-  margin-bottom: 88px;
+
   width: auto;
   @media screen and (min-width: 768px) {
     width: 213px;
@@ -84,4 +84,3 @@ padding-bottom: 93px;
   line-height: 150%;
   color: var(--color-scheme-1-text);
 }
-
