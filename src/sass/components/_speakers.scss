@@ -19,8 +19,9 @@
      
   }
   &__item {
-   width: 335px;
+   max-width: 335px;
   }
+ 
   &__photo {
     display: flex;
   align-content: flex-start;
@@ -54,7 +55,7 @@
     color: #03030a;
   }
   &__box {
-   margin-top: 16px;
+ margin-top: 16px; 
 }
 &__list__icon {
    display: flex;
@@ -80,6 +81,9 @@
     //  width: calc((100% - 32px) / 2);
         
     }
+     &__container {
+    height: 260px;
+  }
     &__item {
      
     }
@@ -91,6 +95,9 @@
     }
     &__text {
     }
+     &__box {
+ margin-top: 0px; 
+}
   }
 }
 @media screen and (min-width: 1280px) {
@@ -105,6 +112,9 @@
     &__item {
         width: 304px;
     }
+     &__container {
+    height: 260px;
+  }
     &__photo {
     }
       &__wrapper {
